@@ -6,7 +6,12 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
 def compute():
-    print(103 * 607)
+    print(str(103 * 607))
+    #  [::-1] in line 11 follows the pattern of 'start : stop : steps' WHERE
+    #  start = the beginning index of the slice (defaults to index 0)
+    #  stop = where the slice ends (defaults to index -1)
+    #  steps = the interval at which it counts (negative values result in it counting backwards)
+
     print(str(103 * 607)[::-1])
 
     ans = max(i * j

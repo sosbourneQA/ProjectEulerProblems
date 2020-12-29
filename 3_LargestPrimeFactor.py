@@ -12,7 +12,7 @@ def factors(number):
 			# number /= prime
 			number = number / prime
 			yield prime
-		if number == 1:
+		elif number == 1:
 			break
 
 
@@ -20,7 +20,8 @@ def primes(min, max):
 	# if 2 >= min: yield 2
 	for i in range(3, max, 2):
 		for p in plist:
-			if i % p == 0 or p * p > i: break
+			if i % p == 0 or p * p > i:
+				break
 			elif i % p:
 				plist.append(i)
 				if i >= min: yield i
