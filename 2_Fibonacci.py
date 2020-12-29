@@ -9,7 +9,7 @@
 # values do not exceed four million, find the sum of the even-valued terms.
 
 
-# OFFICIAL SOLUTION
+# SOLUTION FROM 'PROJECT NAYUKI'
 
 # def compute():
 # 	ans = 0
