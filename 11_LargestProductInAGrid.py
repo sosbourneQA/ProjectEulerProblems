@@ -41,7 +41,7 @@ def compute():
 				ans = max(grid_product(x, y,  0, 1, CONSECUTIVE), ans)
 			if x + CONSECUTIVE <= width and y + CONSECUTIVE <= height:
 				ans = max(grid_product(x, y,  1, 1, CONSECUTIVE), ans)
-			if x - CONSECUTIVE >= -1    and y + CONSECUTIVE <= height:
+			if x - CONSECUTIVE >= -1 and y + CONSECUTIVE <= height:
 				ans = max(grid_product(x, y, -1, 1, CONSECUTIVE), ans)
 	return str(ans)
 
